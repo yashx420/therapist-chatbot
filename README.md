@@ -1,16 +1,16 @@
 # 🧠 Emotion-Aware Conversational AI (FastAPI + OpenAI)
 
-A lightweight, text-based emotional companion chatbot backend built with **FastAPI** and **OpenAI**.
-The service provides empathetic, therapist-style conversational responses with basic emotion detection and crisis-safety handling.
+A lightweight, text-based emotional companion chatbot backend built with **FastAPI** and **OpenAI**, paired with a modern **React + TailwindCSS** frontend.
+The system provides empathetic conversational responses, basic emotion detection, and crisis-safety handling.
 
 ## 🚀 Features
 
-* Emotion classification using LLM-based inference
-* Empathetic, supportive response generation
+* Emotion classification using LLM inference
+* Empathetic, supportive dialogue generation
 * Crisis-related message detection
 * FastAPI backend with CORS enabled
-* Simple `/chat` POST endpoint
-* Low-memory design suitable for lightweight cloud hosting
+* Clean, modern React frontend with TailwindCSS styling
+* Simple `/chat` POST endpoint for message exchange
 
 ## 📡 API Endpoint
 
@@ -36,9 +36,17 @@ Response:
 
 ## 🏗️ Tech Stack
 
-* **FastAPI** — API framework
+### **Frontend**
+
+* **React** — UI framework
+* **TailwindCSS** — utility-first styling
+* **JavaScript/TypeScript** (depending on project setup)
+
+### **Backend**
+
+* **FastAPI** — backend API framework
 * **Uvicorn** — ASGI server
-* **OpenAI API** — emotion classification + dialogue generation
+* **OpenAI API** — text generation & emotion classification
 * **Python 3.10+**
 
 ## 📦 Installation
@@ -63,7 +71,7 @@ http://localhost:8000/docs
 
 ## 🔐 Environment Variables
 
-Create a `.env` or set environment variables:
+Set:
 
 ```
 OPENAI_API_KEY=your_key_here
